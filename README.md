@@ -42,7 +42,7 @@ After training, each modified VGG16 model is split into two parts:
 |`vgg16_cifar10_sub_model_2`|0.7165|[vgg16_cifar10_sub_model_2.h5](https://drive.google.com/file/d/1yp3VGRutPGw9HaR1oiNOmc6QuGoXwWRO/view?usp=drive_link)|
 |`vgg16_cifar10_sub_model_3`|0.7371|[vgg16_cifar10_sub_model_3.h5](https://drive.google.com/file/d/1aH67mx3vkaGhtGDZN-rfLMqcyfXWz_Vm/view?usp=drive_link)|
 |`block_switching_model`|**0.7704**|[cifar10_block_switching_model.h5](https://drive.google.com/file/d/1qUxwGrChvm6wlhXheItyWwSOKabNomDg/view?usp=drive_link)|
-
+> Despite all submodels have same architecture learned weights are different, since weight initialization was random and hence their gradients were also in different directions. This feature makes model robust and some what powers it to defend against adversarial attacks.
 # Conclusion
 The parent/final Block Switching model performs better than the children/sub-models. 
 
